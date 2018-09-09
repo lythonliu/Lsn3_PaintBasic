@@ -3,7 +3,12 @@ package com.dongnao.lsn3_paintbasic;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends com.lythonliu.LinkAppCompatActivity {
+
+    @Override
+    public String getAppName(){
+        return BuildConfig.APP_NAME;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
